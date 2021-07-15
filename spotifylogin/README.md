@@ -1,6 +1,6 @@
 # spotifylogin
 
-A new Flutter project.
+This is a spotify login UI inspired flutter project
 
 ## Getting Started
 
