@@ -10,25 +10,27 @@ class _CartState extends State<Cart> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 30, top: 180, right: 160),
-          child: IconButton(
-            onPressed: null,
-            icon: Icon(
-              Icons.shopping_cart_rounded,
-              size: 200,
-              color: Colors.pink,
+          padding: EdgeInsets.only(top: 180, right: 160),
+          child: Center(
+            child: IconButton(
+              onPressed: null,
+              icon: Icon(
+                Icons.shopping_cart_rounded,
+                size: 200,
+                color: Colors.pink,
+              ),
             ),
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 180, left: 50),
+          padding: EdgeInsets.only(top: 180),
           child: Text(
             'You havent added anything to your cart',
             style: TextStyle(fontSize: 17),
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 20, left: 30),
+          padding: EdgeInsets.only(top: 20),
           child: Container(
             height: 40,
             child: ElevatedButton(

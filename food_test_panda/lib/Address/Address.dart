@@ -11,7 +11,7 @@ class _AddressState extends State<Address> {
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 0, top: 180, right: 150),
+            padding: EdgeInsets.only(left: 0, top: 180, right: 170),
             child: IconButton(
               onPressed: null,
               icon: Icon(
@@ -22,14 +22,14 @@ class _AddressState extends State<Address> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 180, left: 40),
+            padding: EdgeInsets.only(top: 180, left: 20),
             child: Text(
               'You havent saved any address yet.\nClick Add New Address to get started',
               style: TextStyle(fontSize: 17),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 10, left: 40),
+            padding: EdgeInsets.only(top: 20),
             child: Container(
                 height: 40,
                 child: ElevatedButton(

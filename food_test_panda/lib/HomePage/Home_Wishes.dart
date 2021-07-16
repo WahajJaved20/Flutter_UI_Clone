@@ -5,7 +5,7 @@ class Wishes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 15),
-      padding: EdgeInsets.only(right: 115),
+      padding: EdgeInsets.only(right: 125),
       height: 40,
       // color: Colors.amber,
       child: new Text(

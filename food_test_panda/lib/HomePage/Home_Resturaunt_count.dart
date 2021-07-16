@@ -8,8 +8,7 @@ class ResCount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 40),
-      padding: EdgeInsets.only(right: 100),
+      padding: EdgeInsets.only(left: 30),
       height: 40,
       // color: Colors.amber,
       child: Row(

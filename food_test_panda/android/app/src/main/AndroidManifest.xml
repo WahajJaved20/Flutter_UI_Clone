@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.food_test_panda">
    <application
-        android:label="food_test_panda"
+        android:label="Food Panda Clone"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

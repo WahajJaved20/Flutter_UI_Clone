@@ -10,7 +10,7 @@ class _OrderState extends State<Order> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 0, top: 180, right: 160),
+          padding: EdgeInsets.only(left: 0, top: 150, right: 160),
           child: IconButton(
             onPressed: null,
             icon: Icon(
@@ -27,19 +27,22 @@ class _OrderState extends State<Order> {
             style: TextStyle(fontSize: 17),
           ),
         ),
-        Container(
-          height: 40,
-          child: ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.pink),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+        Padding(
+          padding: EdgeInsets.only(top: 20),
+          child: Container(
+            height: MediaQuery.of(context).size.height * 0.06,
+            child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.pink),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
                 ),
-              ),
-              onPressed: () => Navigator.of(context).pushNamed('/'),
-              child: Text("Browse resturaunts in your area")),
+                onPressed: () => Navigator.of(context).pushNamed('/'),
+                child: Text("Browse resturaunts in your area")),
+          ),
         )
       ],
     );

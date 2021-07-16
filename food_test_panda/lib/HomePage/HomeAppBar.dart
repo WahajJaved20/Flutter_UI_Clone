@@ -39,7 +39,6 @@ class HomeAppBar extends StatelessWidget {
                 child: Icon(
                   Icons.favorite_border_outlined,
                   size: 33,
-                  color: Colors.pink,
                 ),
               ),
             ),
@@ -48,7 +47,6 @@ class HomeAppBar extends StatelessWidget {
               icon: Icon(
                 Icons.shopping_bag_outlined,
                 size: 35,
-                color: Colors.pink,
               ),
             )
           ],

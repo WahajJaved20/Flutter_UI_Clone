@@ -4,6 +4,7 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -37,14 +38,14 @@ class Profile extends StatelessWidget {
                         Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(left: 10, top: 10),
+                              padding: EdgeInsets.only(left: 20, top: 10),
                               child: Text(
                                 'Name ',
                                 style: TextStyle(fontSize: 18),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(top: 15),
+                              padding: EdgeInsets.only(top: 15, left: 10),
                               child: Text(
                                 'User',
                                 style: TextStyle(
@@ -56,7 +57,7 @@ class Profile extends StatelessWidget {
                         Align(
                           alignment: Alignment.topRight,
                           child: Padding(
-                            padding: EdgeInsets.only(left: 190),
+                            padding: EdgeInsets.only(left: 175),
                             child: IconButton(
                                 onPressed: null,
                                 icon: Icon(
@@ -89,7 +90,7 @@ class Profile extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsets.only(left: 10, right: 50, top: 10),
+                                  EdgeInsets.only(left: 20, right: 50, top: 10),
                               child: Text(
                                 'Email ',
                                 style: TextStyle(fontSize: 18),
@@ -140,14 +141,14 @@ class Profile extends StatelessWidget {
                         Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(left: 10, top: 10),
+                              padding: EdgeInsets.only(left: 20, top: 10),
                               child: Text(
                                 'Password ',
                                 style: TextStyle(fontSize: 18),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(top: 15),
+                              padding: EdgeInsets.only(top: 15, right: 20),
                               child: Text(
                                 '*****',
                                 style: TextStyle(
@@ -159,7 +160,7 @@ class Profile extends StatelessWidget {
                         Align(
                           alignment: Alignment.topRight,
                           child: Padding(
-                            padding: EdgeInsets.only(left: 155),
+                            padding: EdgeInsets.only(left: 145),
                             child: IconButton(
                                 onPressed: null,
                                 icon: Icon(
@@ -191,14 +192,14 @@ class Profile extends StatelessWidget {
                         Column(
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(left: 10, top: 10),
+                              padding: EdgeInsets.only(left: 20, top: 10),
                               child: Text(
                                 'Mobile number',
                                 style: TextStyle(fontSize: 18),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(top: 15),
+                              padding: EdgeInsets.only(top: 15, left: 15),
                               child: Text(
                                 '0310-xxxxxxx',
                                 style: TextStyle(
@@ -210,7 +211,7 @@ class Profile extends StatelessWidget {
                         Align(
                           alignment: Alignment.topRight,
                           child: Padding(
-                            padding: EdgeInsets.only(left: 120),
+                            padding: EdgeInsets.only(left: 110),
                             child: IconButton(
                                 onPressed: null,
                                 icon: Icon(
