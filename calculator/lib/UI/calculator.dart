@@ -24,9 +24,15 @@ class _CalculatorState extends State<Calculator> {
   }
 
   buttonPress(String num) {
-    setState(() {
-      _current.text = _current.text + num;
-    });
+    if (_current.text.length > 1 &&
+        checkOperator(_current.text[_current.text.length - 1]) &&
+        checkOperator(num)) {
+      return;
+    } else {
+      setState(() {
+        _current.text = _current.text + num;
+      });
+    }
   }
 
   clearState() {
